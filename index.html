@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body>
+   
+    
+    <div class="wrapper">
+        <!--home section-->
+        <div class="home-section" id="home">
+
+            <header>
+                <div class="header-section" id="header">
+        
+                    <a href="homepage.html"> <img src="media/logo.gif" alt="mylogo"> </a>
+
+                </div>
+
+                <a class="openslide" onclick="open_box()" href="#">
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                </a>
+
+                <nav>
+                   <div class="nav">
+                            <ul>
+                                <li>  <a href="homepage.html">homepage </a> </li> 
+                                <li> <a href="#about">about us  </a>  </li>
+                                <li> <a href="#contact">contact us</a></li>
+                            </ul>
+                    </div>
+                </nav>
+                <div class="side-menu" id="menu">
+                    <ul>
+                        <li><a href="homepage.html">homepage </a> </li> 
+                        <li> <a href="#about">about us  </a>  </li>
+                        <li> <a href="#contact">contact us</a></li>
+                        
+                        <button><a href="#" onclick="close_box()">goaway</a></button>
+                    </ul>
+                </div>
+                
+               
+            </header>
+
+
+
+
+            
+           <main>
+                <div class="hero">
+                   
+                    <h1>Munz Made Them </h1>
+                    <p> a luxury dessert shop</p>
+                   
+                </div>
+           </main>
+
+        </div>
+
+
+
+
+        
+            <!--about section-->
+            
+            <div class="about-section" id="about">
+                <h2>About Us </h2>
+                <div class="about-upper">
+                    <div>
+                        <h3>box of 6</h3>
+                        <img src="media/box6Frame.png" alt="mac1">
+                    </div>
+                    <div>
+                        <h3>box of 8</h3>
+                        <img src="media/box8Frame.png" alt="mac2">
+                    </div>
+                    <div>
+                        <h3>box of 12</h3>
+                        <img src="media/box12Frame.png" alt="mac3">
+                    </div>
+                    <div>
+                        <h3>box of 24</h3>
+                        <img src="media/box24Frame.png" alt="mac4">
+                    </div>
+               
+                </div>
+
+            <div class="aboutus-lower" >
+                <div class="about_para">
+                    <p>
+                        munz made them was found in 2019. we have exotic flavours of french macarons. we started because baking macarons is our passion and 
+                        the small world around us wanted this big world surrounding us to experience the magic that we create in our kitchen. baaking makes 
+                        us happy and it only made sense for us to put it out to the world. to our surprise our community enjoyed our macarons a lot as they 
+                        hold their uniqueness in the suble sweetness that they have. our macarons are not over whelhmingly sweet but they give you the whole 
+                        experience of the flavour that you.re trying. thanks to our community for supporting us and making us who we are today
+                    </p>
+                </div>
+
+                <div class="about_img">
+                    <img src="media/maacrons3.gif" alt="baking">
+                </div>
+
+            </div>
+        
+
+
+
+
+        <!--contact section-->
+        <aside class="contact-section" id="contact">
+
+            <h2>Contact us</h2>
+            <div class="aside_items" >
+
+                <div id="form">
+                    <h3>Urgent inquiry</h3>
+                    <p> to send me an urgent mesage fill in this form: </p>
+
+                    <form>
+                        First Name:
+                        <br>
+                        <input name="first name" type="text">
+                        <br>
+
+                        Last Name:
+                        <br>
+                        <input type="text" name="last_name">
+                        <br>
+
+                        Email:
+                        <br>
+                        <input type="email" name="email">
+                        <br>
+
+                        Phone Number:
+                        <br>
+                        <input type="text" name="phone">
+                        <br>
+
+                        Contact Body:
+                        <br>
+                        <input type="text" name="body">
+                        <br>
+        
+                        <input type="checkbox"> I'm not a robot
+                        <br>
+                        <br>
+
+                        <input type="submit" name="submit" value="send" id="button">
+                    
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            munz made them &COPY;2018
+        </footer>
+        </div>
+    
+    </div>
+    <script>
+        //open the menu
+              function open_box() {
+            document.getElementById('menu').style.width=('100vw');
+        } 
+
+        //close the menu
+        function close_box() {
+            document.getElementById('menu').style.width=('0px');
+        }
+    </script>
+
+</body>
+</html>
