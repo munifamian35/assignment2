@@ -1,12 +1,16 @@
-
-
 /*imports*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@600&family=Righteous&display=swap');
 html{
     scroll-behavior: smooth;
     font-family:sans-serif;
-
 }
+
+
+/* global */
+:root {
+--text-color:aliceblue;
+}
+
 
 /* laptop layout*/
 nav a:link {color: rgb(232, 179, 133);}
@@ -19,7 +23,7 @@ h1,h2,h3 {
 }
 
 h3{
-    color: aliceblue;
+    color: var(--text-color);
 }
 
 
@@ -27,7 +31,7 @@ h3{
 h1, h2 { 
     text-align: center;
     color: rgb(159, 81, 150);
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 p{
@@ -40,9 +44,9 @@ header{
     background-color: rgb(172, 243, 228);
     justify-content:space-between;
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 30;
     height: 10vh;
 }
@@ -80,7 +84,7 @@ nav :first-child{
 }
 
 .home-section{
-    height: 100vh;
+    height: auto;
 }
 
 main
@@ -108,7 +112,7 @@ main
 }
 
 .hero p{
-    background-color: aliceblue;
+    background-color: var(--text-color);
     padding: .625rem;
     font-size: 1.5625rem;
     color: rgb(159, 81, 150);
@@ -117,7 +121,7 @@ main
 
 
 .about-section{
-    height: 100vh;
+    height: auto;
     background-color: rgb(176, 176, 239);
     padding-top: .9375rem;
 }
@@ -151,17 +155,17 @@ main
 
 .about_para{
     flex:  1;
-    color: aliceblue;
+    color: var(--text-color);
 }
 
 .contact-section{
-    height: 100vh;
+    height: auto;
     background-color:rgb(243, 191, 191);
-    padding-top: .9375rem;
+    padding: 1.3em;
 }
 
 .contact-section h3, p{
-    color: aliceblue;
+    color: var(--text-color);
 }
 
 .contact-section p{
@@ -204,7 +208,7 @@ input:focus{
 }
 
 #button {
-    color: white;
+    color: var(--text-color);
     background-color: rgb(234, 166, 143);
     padding: .9375rem;
     border: .1875rem solid white;
@@ -238,17 +242,8 @@ footer{
 
 @media all and (max-width:80rem) {
   
-    nav a:link {color: rgb(232, 179, 133);}
-    nav a:hover{color: rgb(159, 21, 172);}
-    nav a:visited{color:palevioletred;}
     h1, h2 { 
-        text-align: center;
-        color: rgb(159, 81, 150);
         font-size: 1.5625rem;
-    }
-
-    p{
-        font-family: lobster;
     }
 
     body {
@@ -256,12 +251,7 @@ footer{
     }
 
    header{
-        display: flex;
-        justify-content:space-between;
-        position:fixed;
-        z-index: 30;
-        height: 8vh;
-        background-color:rgb(172, 243, 228); 
+        height: 8vh; 
    }
 
    .header-section img{
@@ -274,6 +264,10 @@ footer{
     header a{
         margin-right: 1.25rem;
         margin-top: .5rem;
+    }
+
+    .header-section a img{
+        height: 3.125rem;
     }
 
     nav{display: none;}
@@ -317,37 +311,28 @@ footer{
     
     .hero{    
         background-image: url(./media/hero_image.png);
-        background-color: rgb(226, 171, 233);
         height: 50vh;
-        text-align: center;
-        background-size: cover;
         padding-top: 8vh;
     }
     
     .hero h1 {
         margin-top: 0rem;
         padding-top: 1vh;
-        color: white;
         font-size: 2.8125rem;
         margin: 0rem;
         background-color: lightpink;
         
     }
     .hero p{
-        background-color: aliceblue;
         padding: .3125rem;
         font-size: .9375rem;
-        color: rgb(159, 81, 150);
-        margin: 0;
     }
 
     .about-section{
-        height: auto;
-        background-color: rgb(176, 176, 239);
-        padding-top: 03px;
+        padding-top: .1875rem;
         padding-bottom: .625rem;
-    
     }
+
     .about-upper{
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -365,7 +350,6 @@ footer{
         width: 75%;
     }
     .aboutus-lower{
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -380,14 +364,11 @@ footer{
     }
 
     .contact-section{
-        height: auto;
-        background-color:rgb(234, 183, 168);
         padding-bottom: .3125rem;
     
     }
 
     .contact-section h3, p{
-        color: aliceblue;
         padding-top: 0;
         margin: 0;
         padding-bottom: .625rem;
@@ -396,7 +377,6 @@ footer{
     }
 
     .aside_items{
-        display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -404,43 +384,35 @@ footer{
        
     }
    
-    form{   text-align: center;
-            background-color:rgb(254, 220, 220);
-            box-shadow: 15cm; 
-            border-radius: 1.5rem; 
-            padding-top: .3125rem;
-            padding-bottom: .3125rem;
-            font-size: 1rem;
-            
+    form{   
+       background-color:rgb(254, 220, 220);
+        border-radius: 1.5rem; 
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        font-size: 1rem;       
     }
+
     input{
-        box-shadow: 35rem;
-        border: .1875rem solid rgb(115, 115, 249);
         background-color: rgb(238, 218, 200);
-        background: scroll;
         border-radius: .1875rem;
-        box-sizing:content-box;
-        padding: 0.8rem;
-    }
+        box-sizing:content-box;    }
     
     input:focus{
-        border-color: rgb(255, 255, 255);
-        border: .3125rem solid white;
+        border-color:var(--text-color);
+        border: .3125rem solid var(--text-color);
     }
     
     #button {
-        color: white;
+        color: var(--text-color);
         background-color: rgb(138, 138, 236);
         padding: .3125rem;
-        border: .125rem solid white;
+        border: .125rem solid var(--text-color);
         padding-left: .9375rem;
         padding-right: .9375rem;
         font-size: 1.2rem;
         
     }
     footer{
-        background-color: rgb(172, 243, 228);
-        text-align: center;
         padding: .3125rem;
     }
 }
@@ -459,40 +431,20 @@ footer{
 
 @media all and (max-width:48rem) {
 
-    
-    nav a:link {color: rgb(232, 179, 133);}
-    nav a:hover{color: rgb(159, 21, 172);}
-    nav a:visited{color:palevioletred;}
 
     h1, h2 { 
-        text-align: center;
-        color: rgb(159, 81, 150);
-        font-size: 1.5625rem;
-    }
-
-    p{
-        font-family: lobster;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
     }
 
    header{
-        display: flex;
-        justify-content:space-between;
-        position:fixed;
-        z-index: 30;
         height: 5.8vh;
-        background-color:  rgb(172, 243, 228);
     }
 
-    .header-section a{
-       display: none;
-
+    .header-section a img{
+        height: 2.1875rem;
     }
+
     header a{
-        margin-right: 1.25rem;
         margin-top: .1563rem;
     }
 
@@ -503,26 +455,14 @@ footer{
         font-size: 135%;
         padding: .3125rem;
         border-left: 0;
-       
-    
     }
-    #close{
-        display:contents;
-    }
-
-    .home-section{
-        height: 50vh;
-    }
-    
+   
     main{
       height: 40vh;  
     }
     
     .hero{    
         background-image: url(./media/macs.png);
-        background-color: rgb(226, 171, 233);
-        height: 50vh;
-        text-align: center;
         background-size: 155%;
         padding-top: 5vh;
     }
@@ -530,28 +470,15 @@ footer{
     .hero h1 {
         margin-top: .625rem;
         padding-top: 3vh;
-        color: rgb(249, 247, 246);
-        font-size: 2.1875rem;
+        font-size: 3rem;
         margin: .625rem;
         background-color: rgb(255, 178, 147);
-
-    }
-    .hero p{
-        background-color: aliceblue;
-        padding: .3125rem;
-        font-size: .9375rem;
-        color: rgb(159, 81, 150);
-        margin: 0;
     }
 
     .about-section{
-        height: auto;
-        background-color: rgb(176, 176, 239);
         padding-top: .3125rem;
-        padding-bottom: .625rem;
-
-    
     }
+
     .about-upper{
         display: flex;
         flex-direction: column;
@@ -559,34 +486,20 @@ footer{
     }
     
     .about-upper div{
-        padding: .3125rem;
-        text-align: center;
-       
+        padding: .3125rem;  
     }
 
     .about-upper img{
         width: 55%;
     }
-    .aboutus-lower{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 
-    .aboutus-lower p{
-        font-family: Arial, Helvetica, sans-serif; 
-    }
 
     .about_img{
-        width: 65%;
         border: .3125rem, solid yellowgreen;
     }
 
     .contact-section{
-        height: auto;
-        background-color:rgb(234, 168, 168);
         padding-bottom: .625rem;
-
     }
 
     .contact-section h3, p{
@@ -595,8 +508,6 @@ footer{
     }
 
     .aside_items{
-        display: flex;
-        flex-direction: column;
         text-align: left;
         align-items: left;
         align-content: left;
@@ -605,42 +516,27 @@ footer{
     form{    
         text-align: left;
         background-color:rgb(234, 168, 168);
-        box-shadow:15cm; 
         border-radius: 3rem; 
-        padding-top: .0625rem;
-        padding-bottom: .0625rem;
+        padding-top: .9375rem;
+        padding-bottom: .9375rem;
         font-size: 0.8rem;
         padding-left: 2.1875rem;
         padding-right: 0;
     }
+    
     input{
-        box-shadow: 35cap;
-        border: .1875rem solid rgb(138, 138, 236);
+        box-shadow: 25rem;
         background-color: rgb(232, 179, 133);
-        background: scroll;
-        border-radius: .1875rem;
-        box-sizing:content-box;
         padding: 0.5rem;
     }
     
-    input:focus{
-        border-color: rgb(255, 255, 255);
-    }
-    
     #button {
-        color: white;
-        background-color: rgb(138, 138, 236);
-        padding: .3125rem;
-        border: .0625rem solid white;
-        padding-left: .9375rem;
-        padding-right: .9375rem;
+        border: .0625rem solid var(--text-color);
         font-size: 1rem;
         
     }
     footer{
-        background-color: rgb(172, 243, 228);
-        text-align: center;
-        padding: .3125rem;
+        padding: .1875rem;
     }
 }
 
