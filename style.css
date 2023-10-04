@@ -48,13 +48,13 @@ header{
 }
 
 .header-section a img{
-    height="4.6875rem;
+    height: 4.6875rem;
 }
 
 nav {   
     box-sizing: border-box;
     text-align: center;
-    padding-right: 15px;
+    padding-right: .9375rem;
     z-index: 30;
     height: 10vh;
      
@@ -67,17 +67,13 @@ nav li{
     padding-left: .3125rem;
     padding-right: .3125rem;
     border-left: .1875rem dotted rgb(243, 16, 239);
-    margin: 0px;
-   
+    margin: 0;   
 }
 
 nav :first-child{
-  border-left: 0px;
+  border-left: 0;
 }
 
-#close{
-    display: none;
-}
 
 .side-menu{
     display: none;
@@ -104,7 +100,7 @@ main
 
 
 .hero h1 {
-    margin-top: 15px;
+    margin-top: .9375rem;
     padding-top: 15vh;
     color: rgb(248, 222, 197);
     font-size: 5.3125rem;
@@ -211,7 +207,7 @@ input:focus{
     color: white;
     background-color: rgb(234, 166, 143);
     padding: .9375rem;
-    border: 3px solid white;
+    border: .1875rem solid white;
     padding-left: 1.5625rem;
     padding-right: 1.5625rem;
     font-size: 1.7rem;
@@ -225,7 +221,7 @@ footer{
 }
 
 
-@media screen and  (min-width: 1280px){
+@media screen and  (min-width: 80rem){
     .openslide {
         display: none;
     }
@@ -240,7 +236,7 @@ footer{
 
 /* tablet layout*/
 
-@media all and (max-width:1280px) {
+@media all and (max-width:80rem) {
   
     nav a:link {color: rgb(232, 179, 133);}
     nav a:hover{color: rgb(159, 21, 172);}
@@ -248,7 +244,7 @@ footer{
     h1, h2 { 
         text-align: center;
         color: rgb(159, 81, 150);
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     p{
@@ -269,15 +265,15 @@ footer{
    }
 
    .header-section img{
-        height: 55px;
-        padding-left: 10px;
-        padding-top: 5px;
+        height: 3.4375rem;
+        padding-left: .625rem;
+        padding-top: .3125rem;
     }
 
    
     header a{
-        margin-right: 20px;
-        margin-top: 8px;
+        margin-right: 1.25rem;
+        margin-top: .5rem;
     }
 
     nav{display: none;}
@@ -293,17 +289,17 @@ footer{
         right: 0;
         overflow: hidden;
         z-index: 9999;
-        font-size: 35px;
-        padding-bottom: 10px;
+        font-size: 2.1875rem;
+        padding-bottom: .625rem;
     }
 
     
     button{
         background-color: rgb(176, 176, 239) ;
         border: 1px solid purple;
-        margin-top: 30px;
-        padding: 10px;
-        font-size: 35px;
+        margin-top: 1.875rem;
+        padding: .625rem;
+        font-size: 2.1875rem;
 
     }
    
@@ -329,18 +325,18 @@ footer{
     }
     
     .hero h1 {
-        margin-top: 0px;
+        margin-top: 0rem;
         padding-top: 1vh;
         color: white;
-        font-size: 45px;
-        margin: 0px;
+        font-size: 2.8125rem;
+        margin: 0rem;
         background-color: lightpink;
         
     }
     .hero p{
         background-color: aliceblue;
-        padding: 5px;
-        font-size: 15px;
+        padding: .3125rem;
+        font-size: .9375rem;
         color: rgb(159, 81, 150);
         margin: 0;
     }
@@ -349,19 +345,19 @@ footer{
         height: auto;
         background-color: rgb(176, 176, 239);
         padding-top: 03px;
-        padding-bottom: 10px;
+        padding-bottom: .625rem;
     
     }
     .about-upper{
         display: grid;
         grid-template-columns: 1fr 1fr ;
-        margin: 0px;   
-        padding-top: 0px;
-        padding-bottom: 5px;
+        margin: 0;   
+        padding-top: 0;
+        padding-bottom: .3125rem;
     }
     
     .about-upper div{
-        padding: 0px;
+        padding: 0;
         text-align: center;   
     }
 
@@ -380,13 +376,13 @@ footer{
 
     .about_img{
         width: 65%;
-        border: 5px, solid aqua;
+        border: .3125rem, solid aqua;
     }
 
     .contact-section{
         height: auto;
         background-color:rgb(234, 183, 168);
-        padding-bottom: 5px;
+        padding-bottom: .3125rem;
     
     }
 
@@ -394,7 +390,7 @@ footer{
         color: aliceblue;
         padding-top: 0;
         margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: .625rem;
 
        
     }
@@ -412,40 +408,40 @@ footer{
             background-color:rgb(254, 220, 220);
             box-shadow: 15cm; 
             border-radius: 1.5rem; 
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
             font-size: 1rem;
             
     }
     input{
         box-shadow: 35rem;
-        border: 3px solid rgb(115, 115, 249);
+        border: .1875rem solid rgb(115, 115, 249);
         background-color: rgb(238, 218, 200);
         background: scroll;
-        border-radius: 3px;
+        border-radius: .1875rem;
         box-sizing:content-box;
         padding: 0.8rem;
     }
     
     input:focus{
         border-color: rgb(255, 255, 255);
-        border: 5px solid white;
+        border: .3125rem solid white;
     }
     
     #button {
         color: white;
         background-color: rgb(138, 138, 236);
-        padding: 5px;
-        border: 2px solid white;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: .3125rem;
+        border: .125rem solid white;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
         font-size: 1.2rem;
         
     }
     footer{
         background-color: rgb(172, 243, 228);
         text-align: center;
-        padding: 5px;
+        padding: .3125rem;
     }
 }
 
@@ -461,7 +457,7 @@ footer{
 
 /* phone layout*/
 
-@media all and (max-width:768px) {
+@media all and (max-width:48rem) {
 
     
     nav a:link {color: rgb(232, 179, 133);}
@@ -471,7 +467,7 @@ footer{
     h1, h2 { 
         text-align: center;
         color: rgb(159, 81, 150);
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     p{
@@ -496,17 +492,17 @@ footer{
 
     }
     header a{
-        margin-right: 20px;
-        margin-top: 2.5px;
+        margin-right: 1.25rem;
+        margin-top: .1563rem;
     }
 
     nav li {
-        border-bottom: 3px solid darkorchid;
+        border-bottom: .1875rem solid darkorchid;
         display: flex;
         flex-direction: column;
         font-size: 135%;
-        padding: 5px;
-        border-left: 0px;
+        padding: .3125rem;
+        border-left: 0;
        
     
     }
@@ -532,18 +528,18 @@ footer{
     }
     
     .hero h1 {
-        margin-top: 10px;
+        margin-top: .625rem;
         padding-top: 3vh;
         color: rgb(249, 247, 246);
-        font-size: 35px;
-        margin: 10px;
+        font-size: 2.1875rem;
+        margin: .625rem;
         background-color: rgb(255, 178, 147);
 
     }
     .hero p{
         background-color: aliceblue;
-        padding: 5px;
-        font-size: 15px;
+        padding: .3125rem;
+        font-size: .9375rem;
         color: rgb(159, 81, 150);
         margin: 0;
     }
@@ -551,19 +547,19 @@ footer{
     .about-section{
         height: auto;
         background-color: rgb(176, 176, 239);
-        padding-top: 5px;
-        padding-bottom: 10px;
+        padding-top: .3125rem;
+        padding-bottom: .625rem;
 
     
     }
     .about-upper{
         display: flex;
         flex-direction: column;
-        margin: 5px;   
+        margin: .3125rem;   
     }
     
     .about-upper div{
-        padding: 5px;
+        padding: .3125rem;
         text-align: center;
        
     }
@@ -583,19 +579,19 @@ footer{
 
     .about_img{
         width: 65%;
-        border: 5px, solid yellowgreen;
+        border: .3125rem, solid yellowgreen;
     }
 
     .contact-section{
         height: auto;
         background-color:rgb(234, 168, 168);
-        padding-bottom: 10px;
+        padding-bottom: .625rem;
 
     }
 
     .contact-section h3, p{
         color: aliceblue;
-        padding-left: 35px;
+        padding-left: 2.1875rem;
     }
 
     .aside_items{
@@ -611,18 +607,18 @@ footer{
         background-color:rgb(234, 168, 168);
         box-shadow:15cm; 
         border-radius: 3rem; 
-        padding-top: 1px;
-        padding-bottom: 1px;
+        padding-top: .0625rem;
+        padding-bottom: .0625rem;
         font-size: 0.8rem;
-        padding-left: 35px;
+        padding-left: 2.1875rem;
         padding-right: 0;
     }
     input{
         box-shadow: 35cap;
-        border: 3px solid rgb(138, 138, 236);
+        border: .1875rem solid rgb(138, 138, 236);
         background-color: rgb(232, 179, 133);
         background: scroll;
-        border-radius: 3px;
+        border-radius: .1875rem;
         box-sizing:content-box;
         padding: 0.5rem;
     }
@@ -634,17 +630,17 @@ footer{
     #button {
         color: white;
         background-color: rgb(138, 138, 236);
-        padding: 5px;
-        border: 1px solid white;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: .3125rem;
+        border: .0625rem solid white;
+        padding-left: .9375rem;
+        padding-right: .9375rem;
         font-size: 1rem;
         
     }
     footer{
         background-color: rgb(172, 243, 228);
         text-align: center;
-        padding: 5px;
+        padding: .3125rem;
     }
 }
 
